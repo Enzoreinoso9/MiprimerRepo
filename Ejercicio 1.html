@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+    <style>
+        body{
+
+            background-image: url(Imagenes/winner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        div{
+
+            display: grid;
+            place-content: center;
+            background-color: goldenrod ;
+        }
+
+
+        h1{
+
+            display: flex;
+            place-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        a{
+
+            color: black;
+        }
+</style>
+
+
+
+</head>
+<body>
+
+
+<div>
+<h1 id="resultado"></h1>
+</div>
+
+<div>
+    <a href="menú.html">Volver al menú</a>
+</div>
+
+<script>
+
+    const computadora = Math.floor(Math.random()*100)+1;
+    let pedirNumero = 0;
+
+
+while (true) {
+
+
+let pedirNumero = parseInt(prompt("Ingresar número"));
+
+
+if(pedirNumero == computadora){
+
+        document.getElementById("resultado").textContent= `¡FELICIDADES!, EL NÚMERO CORRECTO ES EL "${computadora}".`;
+        break;
+
+}else if ( pedirNumero < computadora){
+
+        alert("Ingresa un número MAYOR.")
+
+
+}else if (pedirNumero > computadora) {
+
+        alert("Ingresa un número MENOR.")
+}
+
+            }
+
+
+
+</script>
+</body>
+</html>

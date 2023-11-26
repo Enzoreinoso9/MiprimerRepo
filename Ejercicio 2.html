@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+
+    <style>
+
+        body{
+
+            background-image: url(Imagenes/calculos.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        div{
+
+            display: grid;
+            place-content: center;
+            background-color: rgb(223, 130, 23);
+        }
+
+
+        a{
+            color: black;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div><h1 id="media"></h1></div>
+    <div><a href="menú.html">Volver al Menú</a></div>
+
+    <script>
+
+        let incremento = 0;
+        let cantidad = 0;
+        
+while (true) {
+
+let numero = parseInt(prompt("Ingresar un número"));
+
+if (numero < 0) {
+
+break;
+
+}
+
+incremento += numero;
+cantidad +=1;
+
+}
+
+
+
+if (cantidad > 0) {
+
+    let media = incremento / cantidad;
+
+    document.getElementById("media").textContent= `La media de los números es: ${media}.`;
+
+}else{
+
+    document.write(`No ingresaste números validos.`)
+}
+
+
+</script>
+</body>
+</html>

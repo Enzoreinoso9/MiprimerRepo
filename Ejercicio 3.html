@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+
+
+    <style>
+
+        body{
+
+            background-image: url(Imagenes/seven.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div{
+
+            display: grid;
+            place-content: center;
+            background-color: grey ;
+        }
+
+
+        h1{
+
+            color: aliceblue;
+        }
+        a{
+
+            color: aliceblue;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    
+
+    <div><h1 id="multiplo"></h1></div>
+
+    <div><a href="menú.html"> Volver a Menú</a></div>
+    <script>
+
+let suma = 0;
+
+for (let i = 1; i < 100; i++) {
+
+
+if (i % 7 === 0) {
+    suma += i;
+}
+}
+
+document.getElementById("multiplo").textContent= `La suma de los múltiplos de 7 menores a 100 es: ${suma}`;
+
+
+
+</script>
+</body>
+</html>
